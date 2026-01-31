@@ -1,0 +1,7 @@
+{
+  "name": "1 Lane Towing",
+  "description": "A website for 1 Lane Towing, a family-owned towing and recovery business in Ukiah, CA, designed to convert stranded drivers into immediate calls and establish authority in off-road recovery.",
+  "requestFramePermissions": [
+    "geolocation"
+  ]
+}
