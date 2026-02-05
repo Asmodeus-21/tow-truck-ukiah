@@ -29,21 +29,21 @@ const TowingPage: React.FC = () => {
             </ul>
           </div>
           <div>
-            <img src="https://picsum.photos/600/450?random=3" alt="Flatbed tow truck" className="rounded-lg shadow-xl" />
+            <img src="https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?q=80&w=800&auto=format&fit=crop" alt="Flatbed tow truck" className="rounded-lg shadow-xl" onError={(e) => { const target = e.target as HTMLImageElement; target.onerror = null; target.src = "https://picsum.photos/seed/flatbed-truck/600/450"; }} />
           </div>
         </div>
       </div>
-      
+
       <div className="bg-brand-light py-16">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <h2 className="text-3xl font-bold text-brand-blue">Need a Tow Now?</h2>
-            <p className="mt-4 text-lg text-gray-600">Don't wait. Our dispatch is ready to send a truck to your location immediately.</p>
-            <div className="mt-8">
-                 <a href={PHONE_HREF} className="inline-flex items-center justify-center bg-brand-red text-white text-xl font-bold py-4 px-10 rounded-lg shadow-lg transform hover:scale-105 transition-transform duration-200">
-                    <PhoneIcon />
-                    <span className="ml-3">CALL {PHONE_NUMBER}</span>
-                </a>
-            </div>
+          <h2 className="text-3xl font-bold text-brand-blue">Need a Tow Now?</h2>
+          <p className="mt-4 text-lg text-gray-600">Don't wait. Our dispatch is ready to send a truck to your location immediately.</p>
+          <div className="mt-8">
+            <a href={PHONE_HREF} className="inline-flex items-center justify-center bg-brand-red text-white text-xl font-bold py-4 px-10 rounded-lg shadow-lg transform hover:scale-105 transition-transform duration-200">
+              <PhoneIcon />
+              <span className="ml-3">CALL {PHONE_NUMBER}</span>
+            </a>
+          </div>
         </div>
       </div>
     </>

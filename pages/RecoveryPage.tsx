@@ -12,7 +12,7 @@ const RecoveryPage: React.FC = () => {
         <div
           className="absolute inset-0 bg-cover bg-center z-0 scale-105"
           style={{
-            backgroundImage: "linear-gradient(rgba(13, 36, 79, 0.7), rgba(13, 36, 79, 0.8)), url('https://images.unsplash.com/photo-1580273916550-e323be2ae537?q=80&w=2000&auto=format&fit=crop')"
+            backgroundImage: "linear-gradient(rgba(13, 36, 79, 0.7), rgba(13, 36, 79, 0.8)), url('https://images.unsplash.com/photo-1464219789935-c2d9d9aba644?q=80&w=2000&auto=format&fit=crop')"
           }}
         />
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-white">
@@ -74,13 +74,13 @@ const RecoveryPage: React.FC = () => {
             >
               <div className="absolute -inset-4 bg-brand-red/10 rounded-2xl -rotate-2" />
               <img
-                src="https://images.unsplash.com/photo-1544620347-c4fd4a3d5997?q=80&w=1000&auto=format&fit=crop"
+                src="https://images.unsplash.com/photo-1464219789935-c2d9d9aba644?q=80&w=1000&auto=format&fit=crop"
                 alt="Recovery Operations"
                 className="relative rounded-2xl shadow-2xl z-10 w-full object-cover h-[500px]"
                 onError={(e) => {
                   const target = e.target as HTMLImageElement;
                   target.onerror = null;
-                  target.src = "https://picsum.photos/seed/towing-recovery/1000/800";
+                  target.src = "https://picsum.photos/seed/off-road-recovery/1000/800";
                 }}
               />
             </motion.div>

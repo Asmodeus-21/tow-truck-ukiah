@@ -10,7 +10,7 @@ const HomePage: React.FC = () => {
   return (
     <>
       {/* Hero Section */}
-      <section className="relative bg-brand-dark text-white bg-cover bg-center" style={{ backgroundImage: "linear-gradient(rgba(13, 36, 79, 0.8), rgba(13, 36, 79, 0.8)), url('https://picsum.photos/1920/1080?random=1')" }}>
+      <section className="relative bg-brand-dark text-white bg-cover bg-center" style={{ backgroundImage: "linear-gradient(rgba(13, 36, 79, 0.8), rgba(13, 36, 79, 0.8)), url('https://images.unsplash.com/photo-1449965408869-eaa3f722e40d?q=80&w=2000&auto=format&fit=crop')" }}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 md:py-32 text-center">
           <h1 className="text-4xl md:text-6xl font-black text-white uppercase tracking-wide">
             Stuck Off-Road or Broke Down?
@@ -79,7 +79,7 @@ const HomePage: React.FC = () => {
             </div>
           </div>
           <div className="text-center">
-            <img src="https://picsum.photos/600/400?random=2" alt="1 Lane Towing truck" className="rounded-lg shadow-xl mx-auto" />
+            <img src="https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?q=80&w=800&auto=format&fit=crop" alt="1 Lane Towing truck" className="rounded-lg shadow-xl mx-auto" onError={(e) => { const target = e.target as HTMLImageElement; target.onerror = null; target.src = "https://picsum.photos/seed/tow-truck/600/400"; }} />
           </div>
         </div>
       </section>
