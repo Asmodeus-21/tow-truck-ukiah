@@ -27,14 +27,7 @@ const HomePage: React.FC = () => {
               <PhoneIcon />
               <span className="ml-3">CALL {PHONE_NUMBER} NOW</span>
             </a>
-            <a
-              href={GOOGLE_MAPS_LINK}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-block w-full sm:w-auto bg-transparent border-2 border-white text-white font-semibold py-4 px-10 rounded-lg hover:bg-white hover:text-brand-dark transition duration-300"
-            >
-              GET DIRECTIONS
-            </a>
+            <SendLocationButton />
           </div>
         </div>
       </section>
