@@ -4,8 +4,7 @@ import { SERVICE_AREAS, PHONE_NUMBER } from "../constants";
 
 const getApiKey = () => {
     // @ts-ignore
-    const key = import.meta.env.VITE_GEMINI_API_KEY || (typeof process !== 'undefined' ? process.env?.VITE_GEMINI_API_KEY : "") || "AIzaSyAmiGfcziootsyd89NOUJfSZxmNV7sPIYA";
-    return key;
+    return import.meta.env.VITE_GEMINI_API_KEY || "";
 };
 
 const systemInstruction = `
