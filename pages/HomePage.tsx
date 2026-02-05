@@ -79,7 +79,7 @@ const HomePage: React.FC = () => {
             </div>
           </div>
           <div className="text-center">
-            <img src="https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?q=80&w=800&auto=format&fit=crop" alt="1 Lane Towing truck" className="rounded-lg shadow-xl mx-auto" onError={(e) => { const target = e.target as HTMLImageElement; target.onerror = null; target.src = "https://images.unsplash.com/photo-1581092160562-40aa08e78837?q=80&w=800&auto=format&fit=crop"; }} />
+            <img src="/team-photo.jpeg" alt="1 Lane Towing team and truck" className="rounded-lg shadow-xl mx-auto" onError={(e) => { const target = e.target as HTMLImageElement; target.onerror = null; target.src = "https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?q=80&w=800&auto=format&fit=crop"; }} />
           </div>
         </div>
       </section>
