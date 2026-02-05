@@ -77,15 +77,6 @@ export const REVIEWS_DATA: Review[] = [
 ];
 
 export const SERVICE_AREAS: string[] = [
-  'Ukiah',
-  'Lakeport',
-  'Redwood Valley',
-  'Hopland',
-  'Talmage',
-  'Kelseyville',
-  'Clearlake',
-  'Calpella',
-  'Potter Valley',
-  'All of Mendocino County',
-  'All of Lake County',
+  'Lake County',
+  'Mendocino County',
 ];

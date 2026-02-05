@@ -9,15 +9,19 @@ const Header: React.FC = () => {
   const navLinkClasses = "block py-2 px-3 text-white rounded hover:bg-brand-blue md:hover:bg-transparent md:border-0 md:hover:text-brand-red md:p-0";
   const activeLinkClasses = "text-brand-red";
 
+  const handleLinkClick = () => {
+    setIsOpen(false);
+  };
+
   const navLinks = (
     <>
-      <NavLink to="/" className={({ isActive }) => `${navLinkClasses} ${isActive ? activeLinkClasses : ''}`} end>Home</NavLink>
-      <NavLink to="/off-road-recovery" className={({ isActive }) => `${navLinkClasses} ${isActive ? activeLinkClasses : ''}`}>Off-Road Recovery</NavLink>
-      <NavLink to="/light-medium-towing" className={({ isActive }) => `${navLinkClasses} ${isActive ? activeLinkClasses : ''}`}>Towing</NavLink>
-      <NavLink to="/roadside-assistance" className={({ isActive }) => `${navLinkClasses} ${isActive ? activeLinkClasses : ''}`}>Roadside</NavLink>
-      <NavLink to="/service-area" className={({ isActive }) => `${navLinkClasses} ${isActive ? activeLinkClasses : ''}`}>Service Area</NavLink>
-      <NavLink to="/about" className={({ isActive }) => `${navLinkClasses} ${isActive ? activeLinkClasses : ''}`}>About Us</NavLink>
-      <NavLink to="/contact" className={({ isActive }) => `${navLinkClasses} ${isActive ? activeLinkClasses : ''}`}>Contact</NavLink>
+      <NavLink to="/" className={({ isActive }) => `${navLinkClasses} ${isActive ? activeLinkClasses : ''}`} onClick={handleLinkClick} end>Home</NavLink>
+      <NavLink to="/off-road-recovery" className={({ isActive }) => `${navLinkClasses} ${isActive ? activeLinkClasses : ''}`} onClick={handleLinkClick}>Off-Road Recovery</NavLink>
+      <NavLink to="/light-medium-towing" className={({ isActive }) => `${navLinkClasses} ${isActive ? activeLinkClasses : ''}`} onClick={handleLinkClick}>Towing</NavLink>
+      <NavLink to="/roadside-assistance" className={({ isActive }) => `${navLinkClasses} ${isActive ? activeLinkClasses : ''}`} onClick={handleLinkClick}>Roadside</NavLink>
+      <NavLink to="/service-area" className={({ isActive }) => `${navLinkClasses} ${isActive ? activeLinkClasses : ''}`} onClick={handleLinkClick}>Service Area</NavLink>
+      <NavLink to="/about" className={({ isActive }) => `${navLinkClasses} ${isActive ? activeLinkClasses : ''}`} onClick={handleLinkClick}>About Us</NavLink>
+      <NavLink to="/contact" className={({ isActive }) => `${navLinkClasses} ${isActive ? activeLinkClasses : ''}`} onClick={handleLinkClick}>Contact</NavLink>
     </>
   );
 
@@ -37,8 +41,8 @@ const Header: React.FC = () => {
             </div>
           </div>
           <div className="hidden md:block">
-             <a href={PHONE_HREF} className="bg-brand-red text-white font-bold py-2 px-4 rounded-lg hover:opacity-90 transition duration-300">
-                CALL NOW
+            <a href={PHONE_HREF} className="bg-brand-red text-white font-bold py-2 px-4 rounded-lg hover:opacity-90 transition duration-300">
+              CALL NOW
             </a>
           </div>
           <div className="-mr-2 flex md:hidden">

@@ -38,10 +38,8 @@ const Footer: React.FC = () => {
           <div className="mt-8 md:mt-0">
             <h3 className="text-sm font-semibold text-gray-400 tracking-wider uppercase">Service Area</h3>
             <ul className="mt-4 space-y-2 text-base text-gray-300">
-              <li>Ukiah</li>
-              <li>Redwood Valley</li>
-              <li>Hopland</li>
-              <li>Talmage</li>
+              <li>Lake County</li>
+              <li>Mendocino County</li>
             </ul>
           </div>
         </div>
