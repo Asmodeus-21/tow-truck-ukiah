@@ -22,14 +22,14 @@ const AboutPage: React.FC = () => {
             <p className="mt-4 text-lg text-gray-600">
               Our roots in this area mean we understand the local roads, the challenging terrain, and the importance of a friendly face in a stressful situation. We're proud to be the team people trust when they're in a tough spot.
             </p>
-             <div className="mt-8">
-                 <Link to="/contact" className="inline-block bg-brand-red text-white font-bold py-3 px-6 rounded-lg hover:opacity-90 transition duration-300">
-                    Contact Us
-                </Link>
+            <div className="mt-8">
+              <Link to="/contact" className="inline-block bg-brand-red text-white font-bold py-3 px-6 rounded-lg hover:opacity-90 transition duration-300">
+                Contact Us
+              </Link>
             </div>
           </div>
           <div className="text-center">
-            <img src="https://picsum.photos/600/700?random=9" alt="The 1 Lane Towing family and team" className="rounded-lg shadow-xl mx-auto" />
+            <img src="/team-photo.jpeg" alt="The 1 Lane Towing family and team" className="rounded-lg shadow-xl mx-auto" />
             <p className="mt-2 text-sm text-gray-500 italic">The 1 Lane Towing Team</p>
           </div>
         </div>
