@@ -38,7 +38,7 @@ const AIConsultant: React.FC = () => {
         setIsLoading(true);
 
         try {
-            const response = await getChatResponse(messages, userMessage);
+            const response = await getChatResponse(newMessages, userMessage);
             setMessages([...newMessages, { role: 'model', parts: response }]);
         } catch (error) {
             setMessages([...newMessages, { role: 'model', parts: 'Sorry, I encountered an error. Please call us directly.' }]);
@@ -58,7 +58,7 @@ const AIConsultant: React.FC = () => {
                     setMessages(newMessages);
 
                     try {
-                        const response = await getChatResponse(messages, locationMsg);
+                        const response = await getChatResponse(newMessages, locationMsg);
                         setMessages([...newMessages, { role: 'model', parts: response }]);
                     } catch (error) {
                         setMessages([...newMessages, { role: 'model', parts: 'Sorry, I had trouble processing your location. Please call us.' }]);
@@ -111,8 +111,8 @@ const AIConsultant: React.FC = () => {
                             {messages.map((msg, i) => (
                                 <div key={i} className={`flex ${msg.role === 'user' ? 'justify-end' : 'justify-start'}`}>
                                     <div className={`max-w-[85%] p-3 rounded-2xl text-sm ${msg.role === 'user'
-                                            ? 'bg-brand-red text-white rounded-tr-none'
-                                            : 'bg-white text-gray-800 shadow-sm border border-gray-100 rounded-tl-none'
+                                        ? 'bg-brand-red text-white rounded-tr-none'
+                                        : 'bg-white text-gray-800 shadow-sm border border-gray-100 rounded-tl-none'
                                         }`}>
                                         {msg.parts}
                                     </div>
