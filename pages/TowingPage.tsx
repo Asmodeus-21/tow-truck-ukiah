@@ -29,7 +29,7 @@ const TowingPage: React.FC = () => {
             </ul>
           </div>
           <div>
-            <img src="https://images.unsplash.com/photo-1581092160562-40aa08e78837?q=80&w=800&auto=format&fit=crop" alt="Flatbed tow truck" className="rounded-lg shadow-xl" onError={(e) => { const target = e.target as HTMLImageElement; target.onerror = null; target.src = "https://images.unsplash.com/photo-1449965408869-eaa3f722e40d?q=80&w=800&auto=format&fit=crop"; }} />
+            <img src="https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?q=80&w=800&auto=format&fit=crop" alt="Flatbed tow truck" className="rounded-lg shadow-xl" onError={(e) => { const target = e.target as HTMLImageElement; target.onerror = null; target.src = "https://images.unsplash.com/photo-1449965408869-eaa3f722e40d?q=80&w=800&auto=format&fit=crop"; }} />
           </div>
         </div>
       </div>
