@@ -74,13 +74,13 @@ const RecoveryPage: React.FC = () => {
             >
               <div className="absolute -inset-4 bg-brand-red/10 rounded-2xl -rotate-2" />
               <img
-                src="https://images.unsplash.com/photo-1464219789935-c2d9d9aba644?q=80&w=1000&auto=format&fit=crop"
+                src="https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?q=80&w=1000&auto=format&fit=crop"
                 alt="Recovery Operations"
                 className="relative rounded-2xl shadow-2xl z-10 w-full object-cover h-[500px]"
                 onError={(e) => {
                   const target = e.target as HTMLImageElement;
                   target.onerror = null;
-                  target.src = "https://picsum.photos/seed/off-road-recovery/1000/800";
+                  target.src = "https://images.unsplash.com/photo-1449965408869-eaa3f722e40d?q=80&w=1000&auto=format&fit=crop";
                 }}
               />
             </motion.div>
