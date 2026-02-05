@@ -1,9 +1,11 @@
 
 import React from 'react';
+import './index.css';
 import { Routes, Route, useLocation } from 'react-router-dom';
 import Header from './components/Header';
 import Footer from './components/Footer';
 import StickyCallBar from './components/StickyCallBar';
+import AIConsultant from './components/AIConsultant';
 import HomePage from './pages/HomePage';
 import TowingPage from './pages/TowingPage';
 import RecoveryPage from './pages/RecoveryPage';
@@ -44,6 +46,7 @@ const App: React.FC = () => {
       </main>
       <Footer />
       <StickyCallBar />
+      <AIConsultant />
     </div>
   );
 };

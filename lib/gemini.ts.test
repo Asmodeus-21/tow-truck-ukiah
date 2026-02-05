@@ -1,0 +1,30 @@
+
+import { GoogleGenerativeAI } from "@google/generative-ai";
+
+const getApiKey = () => {
+    // @ts-ignore
+    const key = import.meta.env.VITE_GEMINI_API_KEY || (typeof process !== 'undefined' ? process.env?.VITE_GEMINI_API_KEY : "") || "AIzaSyAmiGfcziootsyd89NOUJfSZxmNV7sPIYA";
+    return key;
+};
+
+export async function getChatResponse(history: { role: string; parts: string }[], message: string) {
+    const apiKey = getApiKey();
+    const genAI = new GoogleGenerativeAI(apiKey);
+    
+    // Test with a simpler model name or version
+    const model = genAI.getGenerativeModel({ model: "gemini-1.5-flash" });
+
+    try {
+        // Construct a single prompt instead of using chat history for now, just to test connectivity
+        const prompt = `System: You are a helpful assistant.
+History: ${history.map(h => `${h.role}: ${h.parts}`).join('\n')}
+User: ${message}`;
+
+        const result = await model.generateContent(prompt);
+        const response = await result.response;
+        return response.text();
+    } catch (error: any) {
+        console.error("DEBUG - Full Error Object:", error);
+        return `Connection Error: ${error.message}`;
+    }
+}
