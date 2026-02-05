@@ -17,7 +17,7 @@ const HomePage: React.FC = () => {
           </h1>
           <h2 className="text-2xl md:text-4xl font-bold text-brand-red mt-2">We’ll Get You Out.</h2>
           <p className="mt-6 max-w-3xl mx-auto text-lg md:text-xl text-gray-200">
-            Northern California’s trusted family-owned towing service. From highway breakdowns to complex off-road recovery, 1 Lane Towing is here 24/7.
+            Northern California’s trusted family-owned towing service. From highway breakdowns to complex off-road recovery, 1 Lane Towing serves all of Mendocino and Lake counties 24/7.
           </p>
           <div className="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4">
             <a
@@ -61,7 +61,7 @@ const HomePage: React.FC = () => {
             <span className="text-brand-red font-bold">THE 1 LANE TOWING DIFFERENCE</span>
             <h2 className="text-3xl font-extrabold text-brand-blue sm:text-4xl mt-2">Family Owned, Built for Northern California Terrain</h2>
             <p className="mt-4 text-lg text-gray-600">
-              When you call us, you're not talking to a distant call center. You're talking to a local, family-owned business that knows the roads, trails, and weather of Mendocino County. We're your neighbors, and we're equipped to handle the tough recovery jobs that others turn down.
+              When you call us, you're not talking to a distant call center. You're talking to a local, family-owned business that knows the roads, trails, and weather of Mendocino and Lake counties. We're your neighbors, and we're equipped to handle the tough recovery jobs that others turn down.
             </p>
             <div className="mt-6 space-y-4">
               <div className="flex items-start">
@@ -102,7 +102,7 @@ const HomePage: React.FC = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
             <h2 className="text-3xl font-extrabold text-brand-blue sm:text-4xl">What Our Customers Say</h2>
-            <p className="mt-4 text-lg text-gray-600">Trusted by drivers across Mendocino County.</p>
+            <p className="mt-4 text-lg text-gray-600">Trusted by drivers across Mendocino and Lake counties.</p>
           </div>
           <div className="mt-12 grid gap-8 md:grid-cols-2 lg:grid-cols-3">
             {REVIEWS_DATA.map((review) => (
