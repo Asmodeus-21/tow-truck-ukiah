@@ -49,7 +49,7 @@ const Footer: React.FC = () => {
             <Link to="/privacy-policy" className="text-sm text-gray-500 hover:text-brand-red">Privacy Policy</Link>
             <Link to="/terms-of-service" className="text-sm text-gray-500 hover:text-brand-red">Terms of Service</Link>
           </div>
-          <p className="text-sm text-gray-500 text-center mt-2">CA Towing License: [Your License Number Here]</p>
+          <p className="text-sm text-gray-500 text-center mt-2">CA Towing License: 25-000125</p>
         </div>
       </div>
     </footer>
