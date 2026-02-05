@@ -12,7 +12,7 @@ const RecoveryPage: React.FC = () => {
         <div
           className="absolute inset-0 bg-cover bg-center z-0 scale-105"
           style={{
-            backgroundImage: "linear-gradient(rgba(13, 36, 79, 0.7), rgba(13, 36, 79, 0.8)), url('https://images.unsplash.com/photo-1547038577-da80abbc4f19?q=80&w=2000&auto=format&fit=crop')"
+            backgroundImage: "linear-gradient(rgba(13, 36, 79, 0.7), rgba(13, 36, 79, 0.8)), url('https://images.unsplash.com/photo-1581092160562-40aa08e78837?q=80&w=2000&auto=format&fit=crop')"
           }}
         />
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-white">
@@ -74,7 +74,7 @@ const RecoveryPage: React.FC = () => {
             >
               <div className="absolute -inset-4 bg-brand-red/10 rounded-2xl -rotate-2" />
               <img
-                src="https://images.unsplash.com/photo-1533558701576-23c65e42c2fb?q=80&w=1000&auto=format&fit=crop"
+                src="https://images.unsplash.com/photo-1518173946687-a4c889dbbb7a?q=80&w=1000&auto=format&fit=crop"
                 alt="Recovery Operations"
                 className="relative rounded-2xl shadow-2xl z-10 w-full object-cover h-[500px]"
               />
