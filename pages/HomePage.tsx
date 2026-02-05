@@ -65,10 +65,7 @@ const HomePage: React.FC = () => {
                 <div className="flex-shrink-0 h-6 w-6 text-green-500">✓</div>
                 <p className="ml-3 text-gray-600"><span className="font-bold">24/7 Emergency Service:</span> Stranded at 2 AM? We're on our way.</p>
               </div>
-              <div className="flex items-start">
-                <div className="flex-shrink-0 h-6 w-6 text-green-500">✓</div>
-                <p className="ml-3 text-gray-600"><span className="font-bold">Damage-Free Guarantee:</span> Your vehicle is treated with professional care during towing and recovery.</p>
-              </div>
+
             </div>
           </div>
           <div className="text-center">
